@@ -1,0 +1,24 @@
+// ==========================================================================
+// Project: Points (やさしい治療の取り組み)
+// ==========================================================================
+
+@use '../../foundation/variable' as *;
+
+.p-points {
+  padding: 0 0 80px;
+
+  @include sp {
+    padding: 0 0 48px;
+  }
+
+  &__inner {
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+}

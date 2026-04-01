@@ -1,0 +1,37 @@
+// ==========================================================================
+// Component: Section Heading (c-head-02)
+// ==========================================================================
+
+@use '../../foundation/variable' as *;
+
+.c-heading {
+  text-align: center;
+
+  &__sub {
+    display: block;
+    font-family: $font-family-en;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $color-deep;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1;
+
+    @include sp {
+      font-size: $font-size-xs;
+    }
+  }
+
+  &__main {
+    display: block;
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-bold;
+    color: $color-text;
+    line-height: $line-height-heading;
+    margin-top: 8px;
+
+    @include sp {
+      font-size: 22px;
+    }
+  }
+}

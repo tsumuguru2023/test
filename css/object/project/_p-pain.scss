@@ -1,0 +1,165 @@
+// ==========================================================================
+// Project: Pain (痛みが苦手な方へ)
+// ==========================================================================
+
+@use '../../foundation/variable' as *;
+
+.p-pain {
+  padding: 80px 0;
+  background-color: #FCFBF9;
+
+  @include sp {
+    padding: 48px 0;
+  }
+
+  &__inner {
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-bold;
+    color: $color-text;
+    line-height: $line-height-heading;
+    margin-top: 28px;
+
+    @include sp {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  &__circles {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 56px;
+
+    @include sp {
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      margin-top: 32px;
+    }
+  }
+
+  &__circle-wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+
+    @include sp {
+      flex-direction: column;
+      align-items: center;
+
+      &::after {
+        display: none !important;
+      }
+    }
+
+    &:not(:last-child) {
+      &::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 364px;
+        background-color: $color-border;
+        flex-shrink: 0;
+        margin: 0 30px;
+
+        @include tb {
+          margin: 0 16px;
+          height: 300px;
+        }
+      }
+    }
+  }
+
+  &__circle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    text-align: center;
+    margin: 0 auto;
+
+    @include tb {
+      width: 200px;
+    }
+
+    @include sp {
+      width: 240px;
+    }
+  }
+
+  &__circle-image {
+    width: 280px;
+    height: 280px;
+    border-radius: $radius-round;
+    overflow: hidden;
+    margin-bottom: 24px;
+
+    @include tb {
+      width: 200px;
+      height: 200px;
+    }
+
+    @include sp {
+      width: 240px;
+      height: 240px;
+      margin-bottom: 16px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__circle-text {
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    line-height: 1.5;
+    color: $color-text;
+
+    @include sp {
+      font-size: $font-size-sm;
+    }
+  }
+
+  &__description {
+    max-width: 784px;
+    margin: 40px auto 0;
+    font-size: $font-size-base;
+    line-height: 1.7;
+    color: $color-text;
+
+    @include sp {
+      margin-top: 28px;
+      font-size: $font-size-sm;
+    }
+  }
+
+  &__note {
+    display: flex;
+    gap: 8px;
+    max-width: 885px;
+    margin: 16px auto 0;
+    font-size: $font-size-sm;
+    line-height: 1.5;
+    color: $color-text;
+
+    @include sp {
+      font-size: $font-size-xs;
+    }
+  }
+
+  &__note-mark {
+    flex-shrink: 0;
+    font-weight: $font-weight-medium;
+  }
+}

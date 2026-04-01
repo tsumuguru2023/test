@@ -1,0 +1,36 @@
+// ==========================================================================
+// Component: Button
+// ==========================================================================
+
+@use '../../foundation/variable' as *;
+
+.c-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: $radius-sm;
+  font-size: $font-size-base;
+  font-weight: $font-weight-medium;
+  line-height: 1.4;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--primary {
+    background-color: $color-deep;
+    color: $color-white;
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: $color-white;
+    border: 1px solid rgba($color-white, 0.5);
+  }
+}

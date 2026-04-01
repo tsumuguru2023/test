@@ -1,0 +1,75 @@
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+// Colors
+$color-main: #425267;
+$color-deep: #3C699C;
+$color-light: #E8EEF6;
+$color-text: #333333;
+$color-white: #FFFFFF;
+$color-bg-gray: #F5F7FA;
+$color-border: #D0D7E0;
+$color-accent: #06C755;
+
+// Typography
+$font-family-base: 'Noto Sans JP', sans-serif;
+$font-family-en: 'Montserrat', sans-serif;
+
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-base: 16px;
+$font-size-md: 18px;
+$font-size-lg: 21px;
+$font-size-xl: 24px;
+$font-size-2xl: 28px;
+$font-size-3xl: 34px;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$line-height-base: 1.8;
+$line-height-heading: 1.4;
+
+// Layout
+$content-width: 1080px;
+$site-width: 1440px;
+$side-padding: 180px;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+// Responsive mixins
+@mixin sp {
+  @media (max-width: #{$breakpoint-md - 1px}) {
+    @content;
+  }
+}
+
+@mixin tb {
+  @media (min-width: $breakpoint-md) and (max-width: #{$breakpoint-lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin sp-tb {
+  @media (max-width: #{$breakpoint-lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+// Border Radius
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 16px;
+$radius-round: 50%;

@@ -1,0 +1,84 @@
+// ==========================================================================
+// Project: CTA (予約バナー)
+// ==========================================================================
+
+@use '../../foundation/variable' as *;
+
+.p-cta {
+  background-color: $color-main;
+  background-image: url('../images/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: $color-white;
+  padding: 48px 40px;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba($color-main, 0.75);
+  }
+
+  @include sp {
+    padding: 32px 20px;
+  }
+
+  &__inner {
+    max-width: $content-width;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-heading;
+    margin-bottom: 12px;
+
+    @include sp {
+      font-size: $font-size-md;
+    }
+  }
+
+  &__text {
+    font-size: $font-size-sm;
+    line-height: 1.7;
+    opacity: 0.8;
+    margin-bottom: 24px;
+
+    @include sp {
+      font-size: $font-size-xs;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+
+    .c-button {
+      padding: 20px 64px;
+      font-size: $font-size-md;
+      border-radius: $radius-md;
+
+      @include sp {
+        padding: 16px 40px;
+        font-size: $font-size-base;
+      }
+    }
+  }
+
+  &__note {
+    font-size: $font-size-xs;
+    opacity: 0.6;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

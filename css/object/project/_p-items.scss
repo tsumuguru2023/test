@@ -1,0 +1,103 @@
+// ==========================================================================
+// Project: Items (初診時にご持参いただくもの)
+// ==========================================================================
+
+@use '../../foundation/variable' as *;
+
+.p-items {
+  padding: 80px 0;
+  background-color: $color-light;
+
+  @include sp {
+    padding: 48px 0;
+  }
+
+  &__inner {
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 56px;
+
+    @include tb {
+      gap: 24px;
+    }
+
+    @include sp {
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 32px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    text-align: center;
+
+    @include tb {
+      width: 160px;
+    }
+
+    @include sp {
+      width: calc(50% - 12px);
+    }
+  }
+
+  &__item-icon {
+    width: 240px;
+    height: 240px;
+    border-radius: $radius-round;
+    background-color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+
+    @include tb {
+      width: 160px;
+      height: 160px;
+      margin-bottom: 16px;
+    }
+
+    @include sp {
+      width: 140px;
+      height: 140px;
+      margin-bottom: 12px;
+    }
+
+    img {
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
+
+      @include tb {
+        width: 100px;
+        height: 100px;
+      }
+
+      @include sp {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  &__item-text {
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    line-height: 1.5;
+    color: $color-text;
+
+    @include sp {
+      font-size: $font-size-sm;
+    }
+  }
+}

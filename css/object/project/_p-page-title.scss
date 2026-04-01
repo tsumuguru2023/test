@@ -1,0 +1,107 @@
+// ==========================================================================
+// Project: Page Title
+// ==========================================================================
+
+@use '../../foundation/variable' as *;
+
+.p-page-title {
+  background-color: $color-main;
+  background-image: url('../images/titlebar-first.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 48px 0 40px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba($color-main, 0.75);
+  }
+
+  @include sp {
+    padding: 32px 0 28px;
+  }
+
+  &__inner {
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 32px;
+
+    @include sp {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__sub {
+    display: block;
+    font-family: $font-family-en;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: rgba($color-white, 0.6);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1;
+
+    @include sp {
+      font-size: $font-size-xs;
+    }
+  }
+
+  &__main {
+    display: block;
+    font-size: 32px;
+    font-weight: $font-weight-bold;
+    color: $color-white;
+    line-height: $line-height-heading;
+    margin-top: 12px;
+
+    @include sp {
+      font-size: $font-size-xl;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+
+    @include sp {
+      gap: 8px;
+    }
+  }
+
+  &__nav-item {
+    a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border: 1px solid rgba($color-white, 0.25);
+      border-radius: $radius-sm;
+      font-size: $font-size-sm;
+      font-weight: $font-weight-medium;
+      color: rgba($color-white, 0.8);
+      transition: all 0.3s ease;
+
+      @include sp {
+        padding: 8px 14px;
+        font-size: $font-size-xs;
+      }
+
+      &:hover {
+        background-color: rgba($color-white, 0.1);
+        color: $color-white;
+        opacity: 1;
+      }
+    }
+  }
+}

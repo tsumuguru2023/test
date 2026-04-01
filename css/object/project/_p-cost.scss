@@ -1,0 +1,82 @@
+// ==========================================================================
+// Project: Cost (初診時にかかる費用の目安)
+// ==========================================================================
+
+@use '../../foundation/variable' as *;
+
+.p-cost {
+  padding: 80px 0;
+
+  @include sp {
+    padding: 48px 0;
+  }
+
+  &__inner {
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  &__box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 920px;
+    max-width: 100%;
+    height: 52px;
+    border: 1px solid $color-border;
+    border-radius: $radius-sm;
+    margin-top: 48px;
+    padding: 0 20px;
+
+    @include sp {
+      margin-top: 28px;
+      height: auto;
+      padding: 16px 20px;
+    }
+  }
+
+  &__price {
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-bold;
+    color: $color-text;
+    line-height: $line-height-heading;
+
+    @include sp {
+      font-size: $font-size-base;
+    }
+  }
+
+  &__notes {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 32px;
+    text-align: left;
+    max-width: 588px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include sp {
+      margin-top: 20px;
+    }
+  }
+
+  &__note {
+    display: flex;
+    gap: 2px;
+    font-size: $font-size-sm;
+    line-height: 1.5;
+    color: $color-text;
+
+    @include sp {
+      font-size: $font-size-xs;
+    }
+  }
+
+  &__note-mark {
+    flex-shrink: 0;
+    width: 17px;
+  }
+}

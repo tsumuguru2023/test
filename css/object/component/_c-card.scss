@@ -1,0 +1,99 @@
+// ==========================================================================
+// Component: Card — used for POINT & COUNTERMEASURES
+// ==========================================================================
+
+@use '../../foundation/variable' as *;
+
+.c-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 40px 16px;
+  border-bottom: 1px solid $color-border;
+
+  @include tb {
+    gap: 32px;
+    padding: 32px 12px;
+  }
+
+  @include sp {
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 0;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__image {
+    flex-shrink: 0;
+    width: 320px;
+    height: 200px;
+    border-radius: $radius-md;
+    overflow: hidden;
+
+    @include tb {
+      width: 240px;
+      height: 150px;
+    }
+
+    @include sp {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 320 / 200;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__body {
+    flex: 1;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 18px;
+
+    @include sp {
+      padding-top: 0;
+      gap: 16px;
+    }
+  }
+
+  &__label {
+    display: block;
+    font-family: $font-family-en;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $color-deep;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: $font-weight-bold;
+    color: $color-text;
+    line-height: $line-height-heading;
+
+    @include sp {
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    font-size: $font-size-base;
+    line-height: 1.7;
+    color: $color-text;
+
+    @include sp {
+      font-size: $font-size-sm;
+    }
+  }
+}

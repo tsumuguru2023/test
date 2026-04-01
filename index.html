@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>初めての方へ | リベ大デンタルクリニック武蔵小杉院</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== Header (y=0, h=100) ========== -->
+  <header class="l-header">
+    <div class="l-header__inner">
+      <div class="l-header__logo">
+        <a href="/">
+          <img src="images/logo.svg" alt="リベ大デンタルクリニック武蔵小杉院" width="318" height="48">
+        </a>
+      </div>
+      <!-- Hamburger (SP/TB) -->
+      <button class="l-header__hamburger" id="js-hamburger" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Desktop nav -->
+      <nav class="l-header__nav">
+        <div class="l-header__utility">
+          <div class="l-header__utility-link">
+            <a href="#" class="l-header__utility-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              診療時間・アクセス
+            </a>
+            <a href="#" class="l-header__utility-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              よくある質問
+            </a>
+            <a href="#" class="l-header__utility-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              お問い合わせ
+            </a>
+          </div>
+        </div>
+        <ul class="l-header__menu">
+          <li class="l-header__menu-item">
+            <a href="#">当院について
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="4" viewBox="0 0 7 4" fill="none"><path d="M1 1l2.5 2L6 1" stroke="currentColor" stroke-width="1.2"/></svg>
+            </a>
+          </li>
+          <li class="l-header__menu-item"><a href="#">初めての方へ</a></li>
+          <li class="l-header__menu-item">
+            <a href="#">診療内容
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="4" viewBox="0 0 7 4" fill="none"><path d="M1 1l2.5 2L6 1" stroke="currentColor" stroke-width="1.2"/></svg>
+            </a>
+          </li>
+          <li class="l-header__menu-item"><a href="#">診療価格</a></li>
+          <li class="l-header__menu-item"><a href="#">採用情報</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile nav -->
+      <div class="l-header__mobile-nav" id="js-mobile-nav">
+        <ul class="l-header__mobile-menu">
+          <li class="l-header__mobile-menu-item"><a href="#">当院について</a></li>
+          <li class="l-header__mobile-menu-item"><a href="#">初めての方へ</a></li>
+          <li class="l-header__mobile-menu-item"><a href="#">診療内容</a></li>
+          <li class="l-header__mobile-menu-item"><a href="#">診療価格</a></li>
+          <li class="l-header__mobile-menu-item"><a href="#">採用情報</a></li>
+        </ul>
+        <div class="l-header__mobile-utility">
+          <a href="#" class="l-header__mobile-utility-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            診療時間・アクセス
+          </a>
+          <a href="#" class="l-header__mobile-utility-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            よくある質問
+          </a>
+          <a href="#" class="l-header__mobile-utility-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            お問い合わせ
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== Page Title (y=100, h=280) ========== -->
+  <section class="p-page-title">
+    <div class="p-page-title__inner">
+      <div class="p-page-title__heading">
+        <span class="p-page-title__sub">FIRST VISIT</span>
+        <h1 class="p-page-title__main">初めての方へ</h1>
+      </div>
+      <ul class="p-page-title__nav">
+        <li class="p-page-title__nav-item"><a href="#flow">初診の流れ</a></li>
+        <li class="p-page-title__nav-item"><a href="#pain">痛みが苦手な方へ</a></li>
+        <li class="p-page-title__nav-item"><a href="#bring">初診時にご持参いただくもの</a></li>
+        <li class="p-page-title__nav-item"><a href="#cost">初診時にかかる費用の目安</a></li>
+        <li class="p-page-title__nav-item"><a href="#infection">当院の感染対策</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <main class="l-main">
+
+    <!-- ========== Hero / Message (y=380~900) ========== -->
+    <section class="p-hero">
+      <div class="p-hero__inner">
+        <div class="p-hero__label">
+          <span class="p-hero__label-text">Message</span>
+        </div>
+        <div class="p-hero__content">
+          <p class="p-hero__greeting">はじめまして。<br>リベ大デンタルクリニック武蔵小杉院のホームページをご覧いただき、ありがとうございます。</p>
+          <p class="p-hero__text">「歯科医院が苦手」「久しぶりで不安」「何をされるのかわからない」<br>そんなお気持ちの方にも、安心して「健やかな歯を守る」一歩を踏み出していただける場所でありたいと思っています。<br>お困りのことや不安なことがあれば、歯科医師やスタッフにお気軽にご相談ください。</p>
+        </div>
+        <div class="p-hero__image">
+          <img src="images/hero-doctor.jpg" alt="院長の写真">
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== POINT 01-03 (y=967, h=840) ========== -->
+    <section class="p-points">
+      <div class="p-points__inner">
+        <div class="p-points__list">
+
+          <div class="c-card">
+            <div class="c-card__image">
+              <img src="images/point01.jpg" alt="しっかり説明している様子">
+            </div>
+            <div class="c-card__body">
+              <div>
+                <span class="c-card__label">POINT 01</span>
+                <h3 class="c-card__title">しっかり説明し、ご納得いただいてから進めます</h3>
+              </div>
+              <p class="c-card__text">「知らないうちに歯を削られていた」<br>そんなご経験のある方にこそ、安心していただけるように。<br>当院では、治療内容・費用・選択肢をできるだけわかりやすくご説明します。</p>
+            </div>
+          </div>
+
+          <div class="c-card">
+            <div class="c-card__image">
+              <img src="images/point02.jpg" alt="やさしい治療のイメージ">
+            </div>
+            <div class="c-card__body">
+              <div>
+                <span class="c-card__label">POINT 02</span>
+                <h3 class="c-card__title">痛みの少ない、やさしい治療を心がけています</h3>
+              </div>
+              <p class="c-card__text">表面麻酔や電動麻酔を使い、できる限り痛みを感じにくいよう工夫しています。<br>必要に応じて、歯科麻酔医による静脈内鎮静法も対応できます。<br>不安な方は、遠慮なくお声がけください。</p>
+            </div>
+          </div>
+
+          <div class="c-card">
+            <div class="c-card__image">
+              <img src="images/point03.jpg" alt="カウンセリングのイメージ">
+            </div>
+            <div class="c-card__body">
+              <div>
+                <span class="c-card__label">POINT 03</span>
+                <h3 class="c-card__title">無理な自費治療のおすすめはしません</h3>
+              </div>
+              <p class="c-card__text">保険診療・自費診療のどちらもメリット・デメリットを丁寧に説明し、<br>患者さんご自身が選べる形を大切にしています。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 初診の流れ (heading y=1941, content y=2047, h=1988) ========== -->
+    <section id="flow" class="p-steps">
+      <div class="p-steps__inner">
+        <div class="c-heading">
+          <span class="c-heading__sub">FIRST VISIT</span>
+          <h2 class="c-heading__main">初診の流れ</h2>
+        </div>
+        <div class="p-steps__list">
+
+          <div class="p-steps__item">
+            <div class="p-steps__item-inner">
+              <div class="p-steps__item-body">
+                <div class="p-steps__item-header">
+                  <span class="p-steps__item-label">STEP 01</span>
+                  <span class="p-steps__item-separator"></span>
+                  <h3 class="p-steps__item-title">受付</h3>
+                </div>
+                <p class="p-steps__item-text">スマートフォンで簡単に受付ができます。（事前のネット予約をお願いします）<br>受付方法がわからない方も、スタッフがやさしくサポートしますのでご安心ください。</p>
+              </div>
+              <div class="p-steps__item-image">
+                <img src="images/step01.jpg" alt="受付の様子">
+              </div>
+            </div>
+          </div>
+          <div class="p-steps__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none"><path d="M2 2l8 8 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <div class="p-steps__item">
+            <div class="p-steps__item-inner">
+              <div class="p-steps__item-body">
+                <div class="p-steps__item-header">
+                  <span class="p-steps__item-label">STEP 02</span>
+                  <span class="p-steps__item-separator"></span>
+                  <h3 class="p-steps__item-title">カウンセリング</h3>
+                </div>
+                <p class="p-steps__item-text">事前にご記入いただいた問診内容をもとに、「どんなときに痛むか」「治療の希望」など、じっくりお話を伺います。</p>
+              </div>
+              <div class="p-steps__item-image">
+                <img src="images/step02.jpg" alt="カウンセリングの様子">
+              </div>
+            </div>
+          </div>
+          <div class="p-steps__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none"><path d="M2 2l8 8 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <div class="p-steps__item">
+            <div class="p-steps__item-inner">
+              <div class="p-steps__item-body">
+                <div class="p-steps__item-header">
+                  <span class="p-steps__item-label">STEP 03</span>
+                  <span class="p-steps__item-separator"></span>
+                  <h3 class="p-steps__item-title">検査（デジタルレントゲン・歯科用CT・口腔内カメラ）</h3>
+                </div>
+                <p class="p-steps__item-text">お口の状態をしっかり把握し、今後の治療の方針を一緒に考えていきます。<br>なお、出血や腫れ、痛みなど、緊急の症状がある場合は、必要最低限の検査の後、治療や応急処置を優先いたします。</p>
+              </div>
+              <div class="p-steps__item-image">
+                <img src="images/step03.jpg" alt="検査の様子">
+              </div>
+            </div>
+          </div>
+          <div class="p-steps__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none"><path d="M2 2l8 8 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <div class="p-steps__item">
+            <div class="p-steps__item-inner">
+              <div class="p-steps__item-body">
+                <div class="p-steps__item-header">
+                  <span class="p-steps__item-label">STEP 04</span>
+                  <span class="p-steps__item-separator"></span>
+                  <h3 class="p-steps__item-title">治療計画の説明</h3>
+                </div>
+                <p class="p-steps__item-text">お口の中の状態や検査結果は、大型モニターに映しながら、イラストや資料を使って丁寧にご説明いたします。<br>現在の状況をふまえて、必要と思われる治療の進め方や期間、費用の目安、メリット・デメリットまで、できるだけわかりやすくお伝えします。<br>ご不明な点や気になることがあれば、どんなことでも遠慮なくご相談ください。</p>
+              </div>
+              <div class="p-steps__item-image">
+                <img src="images/step04.jpg" alt="治療計画の説明の様子">
+              </div>
+            </div>
+          </div>
+          <div class="p-steps__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none"><path d="M2 2l8 8 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <div class="p-steps__item">
+            <div class="p-steps__item-inner">
+              <div class="p-steps__item-body">
+                <div class="p-steps__item-header">
+                  <span class="p-steps__item-label">STEP 05</span>
+                  <span class="p-steps__item-separator"></span>
+                  <h3 class="p-steps__item-title">治療</h3>
+                </div>
+                <p class="p-steps__item-text">治療内容についてご納得いただけましたら、治療を進めていきます。<br>治療の途中でも、気になることや不安な点があれば、どうぞ遠慮なくお声かけください。<br>患者さんの安心を大切にしながら、一つひとつ丁寧に対応いたします。</p>
+              </div>
+              <div class="p-steps__item-image">
+                <img src="images/step05.jpg" alt="治療の様子">
+              </div>
+            </div>
+          </div>
+          <div class="p-steps__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none"><path d="M2 2l8 8 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <div class="p-steps__item">
+            <div class="p-steps__item-inner">
+              <div class="p-steps__item-body">
+                <div class="p-steps__item-header">
+                  <span class="p-steps__item-label">STEP 06</span>
+                  <span class="p-steps__item-separator"></span>
+                  <h3 class="p-steps__item-title">メンテナンス・定期検診</h3>
+                </div>
+                <p class="p-steps__item-text">むし歯や歯周病は、再発しやすいもの。治療が終わった後も、良い状態を保つために定期的なメンテナンスをおすすめしています。<br>当院では、1回の来院につき1時間の診療枠を確保し、説明・治療・歯石除去までをまとめて行います。治療と予防を並行して進めることで、健康なお口の環境をしっかり守っていきます。</p>
+                <div class="p-steps__item-note">
+                  <span class="p-steps__item-note-mark">※</span>
+                  <span>小児歯科や治療内容によっては、より短い時間で終わることもあります。<br>患者さんの状況やご希望に応じて、柔軟に対応しています。</span>
+                </div>
+              </div>
+              <div class="p-steps__item-image">
+                <img src="images/step06.jpg" alt="メンテナンスの様子">
+              </div>
+            </div>
+          </div>
+          <div class="p-steps__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none"><path d="M2 2l8 8 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <div class="p-steps__item">
+            <div class="p-steps__item-inner">
+              <div class="p-steps__item-body">
+                <div class="p-steps__item-header">
+                  <span class="p-steps__item-label">STEP 07</span>
+                  <span class="p-steps__item-separator"></span>
+                  <h3 class="p-steps__item-title">お会計</h3>
+                </div>
+                <p class="p-steps__item-text">診療当日の受付時にご案内するアプリにクレジットカードを登録していただくと、診療後のお会計を待たずに、すぐお帰りいただけます（事後決済）。<br>アプリの操作が難しい場合も、各種キャッシュレス決済に対応していますのでご安心ください。</p>
+              </div>
+              <div class="p-steps__item-image">
+                <img src="images/step07.jpg" alt="お会計の様子">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 痛みが苦手な方へ (bg y=4196, heading y=4313) ========== -->
+    <section id="pain" class="p-pain">
+      <div class="p-pain__inner">
+        <div class="c-heading">
+          <span class="c-heading__sub">FIRST VISIT</span>
+          <h2 class="c-heading__main">痛みが苦手な方へ</h2>
+        </div>
+
+        <p class="p-pain__subtitle">当院の「やさしい治療」の取り組み</p>
+
+        <div class="p-pain__circles">
+          <div class="p-pain__circle-wrapper">
+            <div class="p-pain__circle-item">
+              <div class="p-pain__circle-image">
+                <img src="images/pain01.jpg" alt="表面麻酔のイメージ">
+              </div>
+              <p class="p-pain__circle-text">表面麻酔を使用して<br>針の痛みを軽減</p>
+            </div>
+          </div>
+          <div class="p-pain__circle-wrapper">
+            <div class="p-pain__circle-item">
+              <div class="p-pain__circle-image">
+                <img src="images/pain02.jpg" alt="電動麻酔器のイメージ">
+              </div>
+              <p class="p-pain__circle-text">電動麻酔器で<br>ゆっくり麻酔注入</p>
+            </div>
+          </div>
+          <div class="p-pain__circle-wrapper">
+            <div class="p-pain__circle-item">
+              <div class="p-pain__circle-image">
+                <img src="images/pain03.jpg" alt="静脈内鎮静法のイメージ">
+              </div>
+              <p class="p-pain__circle-text">ご希望の方には<br>静脈内鎮静法※1も対応</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="p-pain__description">「歯医者が苦手」という方が安心して通える体制を整えています。<br>不安が強い方には、事前にしっかりと説明をし、無理に治療を勧めることはありませんのでご安心ください。</p>
+
+        <div class="p-pain__note">
+          <span class="p-pain__note-mark">※1</span>
+          <span>治療中の不安や怖さを和らげるために、鎮静薬を点滴で投与し、うとうととしたリラックス状態で治療を受けられる方法です。</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 初診時にかかる費用の目安 (heading y=5204) ========== -->
+    <section id="cost" class="p-cost">
+      <div class="p-cost__inner">
+        <div class="c-heading">
+          <span class="c-heading__sub">FIRST VISIT</span>
+          <h2 class="c-heading__main">初診時にかかる費用の目安</h2>
+        </div>
+
+        <div class="p-cost__box">
+          <p class="p-cost__price">保険診療（3割負担）で、大体3,000〜5,000円が目安です。</p>
+        </div>
+
+        <div class="p-cost__notes">
+          <p class="p-cost__note">
+            <span class="p-cost__note-mark">※</span>
+            <span>検査内容によって前後する場合があります。</span>
+          </p>
+          <p class="p-cost__note">
+            <span class="p-cost__note-mark">※</span>
+            <span>応急処置を行った場合は少し増えることがあります。</span>
+          </p>
+          <p class="p-cost__note">
+            <span class="p-cost__note-mark">※</span>
+            <span>川崎市内にお住まいの0歳〜中学3年生のお子さまは小児医療費助成事業の対象です。</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 初診時にご持参いただくもの (bg y=5638, heading y=5732) ========== -->
+    <section id="bring" class="p-items">
+      <div class="p-items__inner">
+        <div class="c-heading">
+          <span class="c-heading__sub">FIRST VISIT</span>
+          <h2 class="c-heading__main">初診時にご持参いただくもの</h2>
+        </div>
+
+        <div class="p-items__list">
+          <div class="p-items__item">
+            <div class="p-items__item-icon">
+              <img src="images/item01.svg" alt="マイナ保険証のアイコン">
+            </div>
+            <p class="p-items__item-text">マイナ保険証または資格証明書</p>
+          </div>
+          <div class="p-items__item">
+            <div class="p-items__item-icon">
+              <img src="images/item02.svg" alt="お薬手帳のアイコン">
+            </div>
+            <p class="p-items__item-text">お薬手帳（お持ちの方）</p>
+          </div>
+          <div class="p-items__item">
+            <div class="p-items__item-icon">
+              <img src="images/item03.svg" alt="マウスピースのアイコン">
+            </div>
+            <p class="p-items__item-text">使用中のマウスピースや詰め<br>（お持ちの方）</p>
+          </div>
+          <div class="p-items__item">
+            <div class="p-items__item-icon">
+              <img src="images/item04.svg" alt="お薬メモのアイコン">
+            </div>
+            <p class="p-items__item-text">現在服用しているお薬のメモなど</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 当院の感染対策 (heading y=6441) ========== -->
+    <section id="infection" class="p-countermeasures">
+      <div class="p-countermeasures__inner">
+        <div class="c-heading">
+          <span class="c-heading__sub">FIRST VISIT</span>
+          <h2 class="c-heading__main">当院の感染対策</h2>
+        </div>
+
+        <p class="p-countermeasures__lead">安心して通っていただける歯科医院であるために。<br>当院では、「自分の家族にも安心して受けてもらえる治療」を基準に、設備の選定や感染対策を行っています。<br>ここでは、当院の感染対策設備についてご紹介します。</p>
+
+        <div class="p-countermeasures__list">
+
+          <div class="c-card">
+            <div class="c-card__image">
+              <img src="images/cm01.jpg" alt="クラスB滅菌器LISAの写真">
+            </div>
+            <div class="c-card__body">
+              <div>
+                <span class="c-card__label">COUNTERMEASURES 01</span>
+                <h3 class="c-card__title">ヨーロッパの厳しい基準を満たした滅菌システム</h3>
+              </div>
+              <p class="c-card__text">治療に使用する器具は、すべて高水準のクラスB滅菌器である「LISA（リサ）」を用いて滅菌処理を行っています。この滅菌器は、ヨーロッパの厳しい滅菌基準（EN13060）をクリアしており、内部が複雑な器具や細い管の内部までしっかりと滅菌できるのが特長です。<br>すべての患者さんに、より清潔で安心できる環境で治療を受けていただけるよう、衛生管理にも力を入れています。</p>
+            </div>
+          </div>
+
+          <div class="c-card">
+            <div class="c-card__image">
+              <img src="images/cm02.jpg" alt="ミーレ ジェットウォッシャーの写真">
+            </div>
+            <div class="c-card__body">
+              <div>
+                <span class="c-card__label">COUNTERMEASURES 02</span>
+                <h3 class="c-card__title">汚れを手洗いより確実に落とす医療用洗浄機</h3>
+              </div>
+              <p class="c-card__text">当院では、医療用洗浄機「ミーレ ジェットウォッシャー」を導入しています。<br>手洗いでは落としきれない汚れを93℃の高温で自動洗浄・消毒・乾燥まで行い、常に清潔な器具を使用できる環境を整えています。<br>感染リスクの軽減にもつながる、国際基準に準拠した高水準の衛生管理です。</p>
+            </div>
+          </div>
+
+          <div class="c-card">
+            <div class="c-card__image">
+              <img src="images/cm03.jpg" alt="口腔外バキュームの写真">
+            </div>
+            <div class="c-card__body">
+              <div>
+                <span class="c-card__label">COUNTERMEASURES 03</span>
+                <h3 class="c-card__title">治療中に出る粉じんを吸い込む口腔外バキューム</h3>
+              </div>
+              <p class="c-card__text">治療中には目に見えない水しぶきや粉じんが空気中に広がることがあります。<br>当院では、すべての診療ユニットに口腔外バキュームを設置。<br>空気中の微細な汚れをしっかり吸引し、院内の空気を清潔に保つことで、感染リスクを最小限に抑えています。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== CTA Banner ========== -->
+  <section class="p-cta">
+    <div class="p-cta__inner">
+      <h2 class="p-cta__title">ご予約はオンラインで、24時間受付中です。</h2>
+      <p class="p-cta__text">当院は完全予約制です。予約なしでご来院された場合、<br>かなりの待ち時間が発生することがあります。ご了承ください。</p>
+      <div class="p-cta__buttons">
+        <a href="#" class="c-button c-button--primary">予約はこちらから</a>
+      </div>
+      <p class="p-cta__note">キャンセルポリシーを必ずご確認ください　<a href="#">お問い合わせ・ご予約のキャンセルはこちら</a></p>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="l-footer">
+
+    <!-- 上段: クリニック情報 + 診療案内（白背景） -->
+    <div class="l-footer__clinic">
+      <div class="l-footer__clinic-inner">
+        <div class="l-footer__clinic-info">
+          <div class="l-footer__logo">
+            <a href="/"><img src="images/logo.svg" alt="リベ大デンタルクリニック武蔵小杉院"></a>
+          </div>
+          <div class="l-footer__address">
+            <p>〒211-0012</p>
+            <p>神奈川県川崎市中原区中丸子35-9 ディール武蔵小杉1F</p>
+          </div>
+          <div class="l-footer__links">
+            <a href="#" class="l-footer__link-btn">
+              アクセス
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#" class="l-footer__link-btn">
+              お問い合わせ
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="l-footer__schedule">
+          <p class="l-footer__schedule-title">診療案内</p>
+          <table class="l-footer__schedule-table">
+            <thead>
+              <tr>
+                <th>診療時間</th>
+                <th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日</th><th>祝</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>9:30 - 13:30</td>
+                <td>●</td><td>●</td><td>●</td><td>●</td><td>●</td><td>●</td><td class="is-closed">&times;</td><td>●</td>
+              </tr>
+              <tr>
+                <td>14:30 - 18:30</td>
+                <td>●</td><td>●</td><td>●</td><td>●</td><td>●</td><td>●</td><td class="is-closed">&times;</td><td>●</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- 下段: グループナビ（グレー背景） -->
+    <div class="l-footer__group">
+      <div class="l-footer__group-inner">
+
+        <div class="l-footer__group-header">
+          <div class="l-footer__group-logo">
+            <img src="images/logo-la.svg" alt="リベラルアーツクリニックグループ">
+            <span class="l-footer__group-logo-text">リベラルアーツクリニックグループ<br><span class="l-footer__group-logo-en">LIBERALARTS CLINIC GROUP</span></span>
+          </div>
+          <div class="l-footer__group-links">
+            <a href="#" class="l-footer__group-link">
+              グループサイト
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#" class="l-footer__group-link">
+              採用サイト
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="l-footer__group-nav">
+          <!-- 医科 -->
+          <div class="l-footer__group-col">
+            <div class="l-footer__group-col-title">
+              <img src="images/icon-medical.svg" alt="" class="l-footer__group-col-icon">
+              <span class="l-footer__group-col-title-ja">医科</span>
+              <span class="l-footer__group-col-title-en">Medical</span>
+              <span class="l-footer__group-col-title-line"></span>
+            </div>
+            <ul class="l-footer__group-list">
+              <li><a href="#">・つくばLAファミリークリニック<span>つくば院</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+              <li><a href="#">・うつのみやLA泌尿器科クリニック<span>栃木泌尿器科院</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+              <li><a href="#">・とどろきLAクリニック<span>東京院</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+              <li><a href="#">・横浜LA内科・内視鏡クリニック<span>横浜院</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+              <li><a href="#">・リベ大クリニック名古屋院<span>名古屋院</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+              <li><a href="#">・リベ大総合クリニック大阪院<span>大阪院</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+              <li><a href="#">・北堀江LA皮膚科クリニック<span>大阪皮膚科院</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+              <li><a href="#">・春日すぐファミリークリニック<span>福岡院</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            </ul>
+          </div>
+
+          <!-- 歯科 + どうぶつ病院 -->
+          <div class="l-footer__group-col">
+            <div class="l-footer__group-col-title">
+              <img src="images/icon-dental.svg" alt="" class="l-footer__group-col-icon">
+              <span class="l-footer__group-col-title-ja">歯科</span>
+              <span class="l-footer__group-col-title-en">Dental</span>
+              <span class="l-footer__group-col-title-line"></span>
+            </div>
+            <ul class="l-footer__group-list">
+              <li><a href="#">・リベ大デンタルクリニック武蔵小杉院<svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+              <li><a href="#">・リベ大デンタルクリニック大阪院<svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+              <li><a href="#">・リベ大デンタルクリニック福岡院<svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            </ul>
+
+            <div class="l-footer__group-col-title" style="margin-top: 32px;">
+              <img src="images/icon-animal.svg" alt="" class="l-footer__group-col-icon">
+              <span class="l-footer__group-col-title-ja">どうぶつ病院</span>
+              <span class="l-footer__group-col-title-en">Animal Hospital</span>
+              <span class="l-footer__group-col-title-line"></span>
+            </div>
+            <ul class="l-footer__group-list">
+              <li><a href="#">・リベ大どうぶつ病院<svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="currentColor"/><path d="M5.5 4L8.5 7L5.5 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 最下段: コピーライト -->
+    <div class="l-footer__bottom">
+      <div class="l-footer__bottom-inner">
+        <a href="#" class="l-footer__bottom-link">プライバシーポリシー</a>
+        <p class="l-footer__copyright">&copy; 2026 リベ大デンタルクリニック武蔵小杉院</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

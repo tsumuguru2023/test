@@ -1,0 +1,126 @@
+// ==========================================================================
+// Project: Hero / Message
+// ==========================================================================
+
+@use '../../foundation/variable' as *;
+
+.p-hero {
+  padding: 100px 0 80px;
+  position: relative;
+  overflow: visible;
+
+  @include tb {
+    padding: 60px 0;
+  }
+
+  @include sp {
+    padding: 40px 0;
+  }
+
+  &__inner {
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    min-height: 350px;
+
+    @include sp-tb {
+      min-height: auto;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+
+    @include sp {
+      margin-bottom: 20px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background-color: $color-main;
+    }
+  }
+
+  &__label-text {
+    font-family: $font-family-en;
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-medium;
+    color: $color-text;
+    line-height: 1;
+
+    @include sp {
+      font-size: 22px;
+    }
+  }
+
+  &__content {
+    max-width: 584px;
+
+    @include sp-tb {
+      max-width: 100%;
+    }
+  }
+
+  &__greeting {
+    font-size: $font-size-base;
+    font-weight: $font-weight-regular;
+    line-height: 1.8;
+    color: $color-text;
+    margin-bottom: 16px;
+
+    @include sp {
+      font-size: $font-size-sm;
+    }
+  }
+
+  &__text {
+    font-size: $font-size-base;
+    font-weight: $font-weight-regular;
+    line-height: 1.8;
+    color: $color-text;
+
+    @include sp {
+      font-size: $font-size-sm;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: -30px;
+    right: -80px;
+    width: 400px;
+    height: 318px;
+    border-radius: $radius-lg;
+    overflow: hidden;
+
+    @include tb {
+      width: 300px;
+      height: 240px;
+      right: 0;
+      top: 0;
+    }
+
+    @include sp {
+      position: relative;
+      top: auto;
+      right: auto;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 400 / 318;
+      margin-top: 24px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

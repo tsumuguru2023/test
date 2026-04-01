@@ -1,0 +1,176 @@
+// ==========================================================================
+// Project: Steps (初診の流れ)
+// ==========================================================================
+
+@use '../../foundation/variable' as *;
+
+.p-steps {
+  padding: 80px 0;
+
+  @include sp {
+    padding: 48px 0;
+  }
+
+  &__inner {
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__list {
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include sp {
+      margin-top: 32px;
+      gap: 12px;
+    }
+  }
+
+  &__item {
+    background-color: $color-light;
+    border-radius: $radius-md;
+    overflow: hidden;
+  }
+
+  &__item-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    padding: 32px 48px;
+
+    @include tb {
+      gap: 32px;
+      padding: 24px 24px;
+    }
+
+    @include sp {
+      flex-direction: column;
+      gap: 16px;
+      padding: 20px 16px;
+    }
+  }
+
+  &__item-body {
+    flex: 1;
+
+    @include sp {
+      order: 2;
+    }
+  }
+
+  &__item-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+
+    @include sp {
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__item-label {
+    font-family: $font-family-en;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $color-deep;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    line-height: 1.5;
+
+    @include sp {
+      font-size: $font-size-xs;
+    }
+  }
+
+  &__item-separator {
+    width: 1px;
+    height: 20px;
+    background-color: $color-border;
+    flex-shrink: 0;
+  }
+
+  &__item-title {
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    color: $color-text;
+    line-height: $line-height-heading;
+
+    @include sp {
+      font-size: $font-size-base;
+    }
+  }
+
+  &__item-text {
+    font-size: $font-size-base;
+    line-height: 1.7;
+    color: $color-text;
+
+    @include sp {
+      font-size: $font-size-sm;
+    }
+  }
+
+  &__item-note {
+    display: flex;
+    gap: 2px;
+    font-size: $font-size-sm;
+    line-height: 1.5;
+    color: $color-text;
+    margin-top: 16px;
+
+    @include sp {
+      font-size: $font-size-xs;
+      margin-top: 12px;
+    }
+  }
+
+  &__item-note-mark {
+    flex-shrink: 0;
+    width: 17px;
+  }
+
+  &__item-image {
+    flex-shrink: 0;
+    width: 300px;
+    height: 180px;
+    border-radius: $radius-md;
+    overflow: hidden;
+    margin-top: 12px;
+
+    @include tb {
+      width: 220px;
+      height: 132px;
+    }
+
+    @include sp {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 300 / 180;
+      margin-top: 0;
+      order: 1;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+    svg {
+      width: 20px;
+      height: 12px;
+      color: $color-main;
+    }
+  }
+}
