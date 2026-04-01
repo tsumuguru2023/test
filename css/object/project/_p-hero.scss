@@ -6,8 +6,7 @@
 
 .p-hero {
   padding: 100px 0 80px;
-  position: relative;
-  overflow: visible;
+  overflow: hidden;
 
   @include tb {
     padding: 60px 0;
@@ -21,12 +20,23 @@
     max-width: $content-width;
     margin: 0 auto;
     padding: 0 20px;
-    position: relative;
-    min-height: 350px;
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
 
-    @include sp-tb {
-      min-height: auto;
+    @include tb {
+      gap: 32px;
     }
+
+    @include sp {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+  &__body {
+    flex: 1;
+    min-width: 0;
   }
 
   &__label {
@@ -63,7 +73,7 @@
   &__content {
     max-width: 584px;
 
-    @include sp-tb {
+    @include sp {
       max-width: 100%;
     }
   }
@@ -92,9 +102,7 @@
   }
 
   &__image {
-    position: absolute;
-    top: -30px;
-    right: -80px;
+    flex-shrink: 0;
     width: 400px;
     height: 318px;
     border-radius: $radius-lg;
@@ -103,18 +111,12 @@
     @include tb {
       width: 300px;
       height: 240px;
-      right: 0;
-      top: 0;
     }
 
     @include sp {
-      position: relative;
-      top: auto;
-      right: auto;
       width: 100%;
       height: auto;
       aspect-ratio: 400 / 318;
-      margin-top: 24px;
     }
 
     img {
