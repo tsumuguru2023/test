@@ -57,6 +57,7 @@ table {
 
 html {
   font-size: 16px;
+  border: 10px solid turquoise;
 }
 
 body {
